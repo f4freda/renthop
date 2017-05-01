@@ -23,13 +23,17 @@ For this competition, manager_id contained a vast amount of information while bu
 Our models had to predict probabilities in 3 categories of "interest_level" -- high, medium or low. In the training set, only about 8% of the entries are belong to the "high" interest level category, whereas 22% "medium" and ~70% "low" interest level. This creates the danger that a predictive model would disproportionately learn about "low" interest level listing and fail to distinguish what makes a "high" interest level one. 
 
 ### 3. Extracting Value from Location Data
+<br>
+
 
 ### In retrospect, what I could have done differently
 **Modeling**
+
 1. Train different models -- even if they are weaker single models, they can be helpful in avoiding overfitting when stacked
 2. Learn and experiment with stacking methods, particularly StackNet
 3. Find better ways to cross-validate and avoid overfitting the leaderboard 
 
 **Feature Engineering**
+
 4. Take current methods and go much further. Based on the sharing by those who placed top 10, when they vectorized the text fields, they used 16,000 most important words by td-idf. I used perhaps the most important 100 words by td-idf. 
 
